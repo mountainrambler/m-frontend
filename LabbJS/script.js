@@ -36,7 +36,7 @@ for (let names of myArray) {
 };
 console.log('Paus');
 
-myArray.forEach(printFunction);
-function printFunction(value, index) {
-    console.log(`Name no. ${index + 1} is ${value}`);
-};
+myArray.forEach(function (name, index) {
+    console.log(`Name no. ${index + 1} is ${name}`);
+
+});
